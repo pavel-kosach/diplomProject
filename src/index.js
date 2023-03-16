@@ -1,1 +1,3 @@
-alert("hello");
+import modal from "./modules/modal";
+
+modal();

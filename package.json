@@ -2,7 +2,7 @@
   "name": "diplom",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "bundle.js",
   "scripts": {
     "build": "webpack --mode=production",
     "watch": "webpack --watch --mode=development",
@@ -13,6 +13,7 @@
   "license": "ISC",
   "devDependencies": {
     "webpack": "^5.76.2",
-    "webpack-cli": "^5.0.1"
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.12.0"
   }
 }

@@ -1,1 +1,1 @@
-alert("hello");
+(()=>{"use strict";(()=>{const c=document.querySelector(".modal-callback");console.log(c)})()})();
