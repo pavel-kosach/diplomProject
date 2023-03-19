@@ -4,10 +4,11 @@ import sendForm from "./modules/sendForm";
 import upArrow from "./modules/upArrow";
 import faq from "./modules/faq";
 import carusel from "./modules/carusel";
+import scrollTo from "./modules/scrollTo";
 
 modal();
 slider();
 sendForm();
 upArrow();
 faq();
-carusel();
+scrollTo();
