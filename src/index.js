@@ -6,6 +6,6 @@ import faq from "./modules/faq";
 
 modal();
 slider();
-// sendForm();
+sendForm();
 upArrow();
 faq();
