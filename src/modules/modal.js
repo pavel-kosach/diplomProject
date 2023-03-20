@@ -1,7 +1,6 @@
 const modal = () => {
   const callbackModal = document.querySelector(".modal-callback");
   const modalOverlay = document.querySelector(".modal-overlay");
-  const modalClose = document.querySelector(".modal-close");
   const telInput = document.querySelector(".tel");
   const nameInput = document.querySelector("input[name='fio']");
 
@@ -23,18 +22,10 @@ const modal = () => {
       e.preventDefault();
       callbackModal.style.display = "block";
       modalOverlay.style.display = "block";
+    } else if (e.target.closest(".modal-close") || e.target.closest(".modal-overlay")) {
+      callbackModal.style.display = "none";
+      modalOverlay.style.display = "none";
     }
-  });
-
-  modalClose.addEventListener("click", (e) => {
-    e.preventDefault();
-    callbackModal.style.display = "none";
-    modalOverlay.style.display = "none";
-  });
-  modalOverlay.addEventListener("click", (e) => {
-    e.preventDefault();
-    callbackModal.style.display = "none";
-    modalOverlay.style.display = "none";
   });
 };
 export default modal;
