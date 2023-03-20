@@ -59,9 +59,12 @@ const sendForm = () => {
         .then((data) => {
           formElements.forEach((input) => {
             input.value = "";
+            input.classList.remove("success");
           });
           statusBlock.textContent = successText;
-          setTimeout();
+          setTimeout(() => {
+            statusBlock.remove();
+          }, 3500);
         })
         .catch((error) => {
           statusBlock.textContent = errorText;
