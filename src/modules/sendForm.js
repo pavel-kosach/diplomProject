@@ -61,6 +61,7 @@ const sendForm = () => {
             input.value = "";
           });
           statusBlock.textContent = successText;
+          setTimeout();
         })
         .catch((error) => {
           statusBlock.textContent = errorText;
