@@ -1,10 +1,7 @@
 const modal = () => {
   const callbackModal = document.querySelector(".modal-callback");
-  const callbackBtn = document.querySelectorAll(".callback-btn");
-  const buttonServices = document.querySelector(".button-services");
   const modalOverlay = document.querySelector(".modal-overlay");
   const modalClose = document.querySelector(".modal-close");
-  const servicesElems = document.querySelector(".services-elements");
   const telInput = document.querySelector(".tel");
   const nameInput = document.querySelector("input[name='fio']");
 
@@ -16,14 +13,6 @@ const modal = () => {
   telInput.addEventListener("input", (e) => {
     e.target.value = e.target.value.replace(/[^0-9()+]/g, "");
   });
-
-  // servicesElems.addEventListener("click", (e) => {
-  //   console.log(e.target);
-  //   if (e.target.closest(".element")) {
-  //     callbackModal.style.display = "block";
-  //     modalOverlay.style.display = "block";
-  //   }
-  // });
 
   document.addEventListener("click", (e) => {
     if (
@@ -37,18 +26,6 @@ const modal = () => {
     }
   });
 
-  // callbackBtn.forEach((btn) => {
-  //   btn.addEventListener("click", (e) => {
-  //     e.preventDefault();
-  //     callbackModal.style.display = "block";
-  //     modalOverlay.style.display = "block";
-  //   });
-  // });
-  // buttonServices.addEventListener("click", (e) => {
-  //   e.preventDefault();
-  //   callbackModal.style.display = "block";
-  //   modalOverlay.style.display = "block";
-  // });
   modalClose.addEventListener("click", (e) => {
     e.preventDefault();
     callbackModal.style.display = "none";

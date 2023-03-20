@@ -42,7 +42,6 @@ const sendForm = () => {
 
   const submitForm = () => {
     const formElements = form.querySelectorAll("input[type=text]");
-    const formName = form.querySelector("input[name=fio]");
     const formData = new FormData(form);
     const formBody = {};
 
