@@ -4,6 +4,7 @@ const slider = () => {
   const timeInterval = 3000;
 
   let currentSlide = 0;
+  let interval;
 
   const prevSlide = (elems, index, strClass) => {
     elems[index].classList.remove(strClass);
